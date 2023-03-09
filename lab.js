@@ -169,9 +169,17 @@ function greeting( obj ) {
 //Code Here
 function totalPopulation(object) {
   const {utah, california, texas, arizona} = object
+  let totalValue = utah + california + texas + arizona
+  return totalValue
+}
+let obj = {
+  utah:5,
+  california:10,
+  texas:12,
+  arizona:8
 
 }
-
+console.log(totalPopulation(obj))
 
 
 //////////////////////////// PROBLEM 9 ////////////////////////////
@@ -185,22 +193,21 @@ function totalPopulation(object) {
 */
 
 //Code Here
-let stats = {
-  carb: '25',
-  fat: '5',
-  protein: '15'
+let pizza = {
+  carb: 'dough',
+  fat: 'sauce',
+  protein: 'pepperoni'
 }
-let ingredientsArray = []
 
-function ingredients(){
+function ingredients(stats){
+  let ingredientsArray = []
   let {carb} =stats
   let {fat} = stats
   let {protein} = stats
   ingredientsArray.push(carb, fat, protein)
-  return
+  return ingredientsArray
 }
-ingredients()
-console.log(ingredientsArray)
+console.log(ingredients(pizza))
 
 
 
@@ -249,13 +256,26 @@ console.log(user)
 */
 
 //Code here
+//class CLASSNAME {
+//  constructor(VALUES FROM INSTANCE) {
+//    this.KEY = VALUE
+//  }
 
+//  METHODNAME(PARAMS){
+//   CODE BLOCK
+//  }
+//}
 class Cat {
-  constructor(name, age, color)
+  constructor(name, age, color){
+    this.name = name
+    this.age = age
+    this.color = color
+  }
   
 }
 
-
+let cat1 = new Cat("Bob", 6, "black")
+console.log(cat1)
 
 //////////////////////////// PROBLEM 13 ////////////////////////////
 /*
@@ -269,6 +289,17 @@ class Cat {
 */
 
 //Code here
+
+// class Wizard {
+//   constructor(name, age, favoriteSpell){
+//     this.name = name
+//     this.age = age
+//     this.favoriteSpell = favoriteSpell
+//     function
+
+//     }
+//   }
+// }
 
 //////////////////////////// PROBLEM 14 ////////////////////////////
 /*
